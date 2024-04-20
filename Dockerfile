@@ -8,7 +8,7 @@ WORKDIR /app
 COPY paragraphs.py /app
 COPY paragraphs.txt /app
 
-# Install NLTK and its data
+# Install NLTK its packages (stopwords and punkt for word_tokenize)
 RUN pip install nltk
 RUN python -m nltk.downloader stopwords
 RUN python -m nltk.downloader punkt
