@@ -29,4 +29,5 @@ from collections import Counter
 
 # Using the method Counter to count the frequency of each word
 counts=Counter(filtered_paragraphs).most_common()
-print(counts)
+for word, freq in counts.items():
+    print(word, ':',freq)
