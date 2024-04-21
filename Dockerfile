@@ -1,7 +1,7 @@
-# Use the official Python image from the Docker Hub
-FROM python
+# Use python alpine from the docker repository
+FROM python:alpine
 
-# Set the working directory in the container
+# Set the directory in the container
 WORKDIR /app
 
 # Copy the Python script and the text file into the container
